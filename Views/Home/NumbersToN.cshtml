@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Nums 1..." + ViewBag.Count;
+}
+
+<h2 style="display: inline-block">@ViewBag.Title</h2>
+<form method="post" style="display: inline-block; padding-left: 10px; margin-bottom: 0.5rem">
+    <input name="count" value="@ViewBag.Count" />
+    <button type="submit">Submit</button>
+</form>
+<div>
+    <ul style="padding-left: 0px">
+        @for (int i = 1; i < ViewBag.Count + 1; i++)
+        {
+            <li style="display:inline ;margin: 0 10px"> @i</li>
+            if (i % 10 == 0)
+            {
+                <li style="display:inline "><br /></li>
+            }
+        }
+    </ul>
+</div>
+

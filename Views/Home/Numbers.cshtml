@@ -1,0 +1,15 @@
+﻿<h1>Numbers 1...100</h1>
+<div>
+    <ul style="padding-left: 0px">
+        @for (int i = 1; i < 101; i++)
+        {
+            
+            <li style="display:inline ;margin: 0 10px;list-style-type:none">@i</li>
+            if (i % 10 == 0)
+            {
+                <br />
+            }
+        }
+    </ul>
+</div>
+
